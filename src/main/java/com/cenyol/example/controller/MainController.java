@@ -45,6 +45,8 @@ public class MainController {
     // 添加用户表单页面
     @RequestMapping(value = "/addUser", method = RequestMethod.GET)
     public String addUser(){
+
+        System.out.println("Debug here");
         return "addUser";
     }
 

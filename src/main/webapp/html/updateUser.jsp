@@ -7,6 +7,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -17,7 +18,7 @@
   <title>SpringMVC Demo 首页</title>
 
   <!-- 新 Bootstrap 核心 CSS 文件 -->
-  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/css/bootstrap.min.css">
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -31,7 +32,7 @@
   <h1>SpringMVC 更新用户信息</h1>
   <hr/>
 
-  <form:form action="/updateUserPost" method="post" commandName="userP" role="form">
+  <form:form action="${pageContext.request.contextPath}/updateUserPost" method="post" commandName="userP" role="form">
     <div class="form-group">
       <label for="firstName">First Name:</label>
       <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter FirstName:"
@@ -58,9 +59,9 @@
 
 
 <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
-<script src="/js/jquery.min.js"></script>
+<script src="${pageContext.request.contextPath}/js/jquery.min.js"></script>
 
 <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-<script src="/js/bootstrap.min.js"></script>
+<script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
 </body>
 </html>
