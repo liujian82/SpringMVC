@@ -5,3 +5,5 @@ target/
 .idea/
 *.iml
 *.iws
+.gitignore
+/src/main/resources/META-INF/persistence.xml
