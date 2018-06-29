@@ -27,7 +27,7 @@
   <![endif]-->
 </head>
 <body>
-<h1>这里是SpringMVC Demo首页</h1>
+<h1>这里是SpringMVC Demo首页 </h1>
 
 <h2>出现此页面，说明配置成功了。</h2>
 
