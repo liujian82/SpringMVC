@@ -19,12 +19,7 @@
   <!-- 新 Bootstrap 核心 CSS 文件 -->
   <link rel="stylesheet" href="${pageContext.request.contextPath}/css/bootstrap.min.css">
 
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-  <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-  <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-  <![endif]-->
+
 </head>
 <body>
 <div class="container">
@@ -49,7 +44,11 @@
       <td>${user.password}</td>
     </tr>
   </table>
+  <div class="form-group">
+    <button type="submit" class="btn btn-sm btn-success"><a href="${pageContext.request.contextPath}/users">返回</a></button>
+  </div>
 </div>
+
 
 
 <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
