@@ -16,10 +16,12 @@
   <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
   <title>SpringMVC Demo 首页</title>
   <!-- trigger to bulid the project again again test again and again again 7 8 9 -->
-
+  <!-- 新 Bootstrap 核心 CSS 文件 -->
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/css/bootstrap.min.css">
 
 </head>
 <body>
+<div class="container">
 <h1>这里是SpringMVC Demo首页 </h1>
 
 <h2>出现此页面，说明配置成功了。</h2>
@@ -28,6 +30,6 @@
 
 <h3><a href="${pageContext.request.contextPath}/users">跳转</a></h3>
 
-
+</div>
 </body>
 </html>
