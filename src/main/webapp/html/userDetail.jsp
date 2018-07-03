@@ -45,7 +45,9 @@
     </tr>
   </table>
   <div class="form-group">
-    <button type="submit" class="btn btn-sm btn-success"><a href="${pageContext.request.contextPath}/users">返回</a></button>
+  <form method="get" action="${pageContext.request.contextPath}/users">
+    <button type="submit">返回</button>
+  </form>
   </div>
 </div>
 

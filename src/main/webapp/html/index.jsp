@@ -30,7 +30,6 @@
 
 <h3><a href="${pageContext.request.contextPath}/users">跳转</a></h3>
 
-  <h4> Hello</h4>
 </div>
 </body>
 </html>
