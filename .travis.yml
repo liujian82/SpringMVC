@@ -3,25 +3,20 @@ language: java
 jdk:
   - oraclejdk8
 
-os:
-  - linux
-
 jobs:
   include:
   - stage: test
-    jdk: oraclejdk8
     script: mvn clean
-    env: CHECK_SEMANTIC_VERSION=true
-  - jdk: oraclejdk8
+
+  - stage: verfity
     script: mvn verify
-    after_success:
-    - mvn compile
-  - jdk: oraclejdk8
-    env: JAVADOC=true
-    script:
-    - mvn clean install -DskipTests=true
-    - mvn javadoc:aggregate
-  - stage: deploy
-    jdk: oraclejdk8
-    script:
+
+  - stage: compile
+    script: mvn compile
+
+#  - stage: Copy file
+#    script: sh 'cp -R /var/lib/jenkins/workspace/res/* ./target/classes/'
+
+  - stage: Undeploy /
+    script: curl "http://${username}:${password}@jonas.sadjoydata.com/manager/text/undeploy?path=/"'
 
