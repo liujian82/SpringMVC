@@ -3,15 +3,11 @@ language: java
 jdk:
   - oraclejdk8
 
-jobs:
-  include:
 
-  - stage: compile
-    script: mvn compile
+install: true
 
-#  - stage: Copy file
-#    script: sh 'cp -R /var/lib/jenkins/workspace/res/* ./target/classes/'
 
-  - stage: Undeploy /
-    script: curl "http://${username}:${password}@jonas.sadjoydata.com/manager/text/undeploy?path=/"
-
+script:
+    #- mvn compile &&
+    #- command2 &&
+    #- curl "http://${username}:${password}@jonas.sadjoydata.com/manager/text/undeploy?path=/" &&
