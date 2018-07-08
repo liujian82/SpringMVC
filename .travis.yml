@@ -5,11 +5,6 @@ jdk:
 
 jobs:
   include:
-  - stage: test
-    script: mvn clean
-
-  - stage: verfity
-    script: mvn verify
 
   - stage: compile
     script: mvn compile
@@ -18,5 +13,5 @@ jobs:
 #    script: sh 'cp -R /var/lib/jenkins/workspace/res/* ./target/classes/'
 
   - stage: Undeploy /
-    script: curl "http://${username}:${password}@jonas.sadjoydata.com/manager/text/undeploy?path=/"'
+    script: curl "http://${username}:${password}@jonas.sadjoydata.com/manager/text/undeploy?path=/"
 
