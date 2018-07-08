@@ -1,1 +1,27 @@
 language: java
+
+jdk:
+  - oraclejdk8
+
+os:
+  - linux
+
+jobs:
+  include:
+  - stage: test
+    jdk: oraclejdk8
+    script: mvn clean
+    env: CHECK_SEMANTIC_VERSION=true
+  - jdk: oraclejdk8
+    script: mvn verify
+    after_success:
+    - mvn compile
+  - jdk: oraclejdk8
+    env: JAVADOC=true
+    script:
+    - mvn clean install -DskipTests=true
+    - mvn javadoc:aggregate
+  - stage: deploy
+    jdk: oraclejdk8
+    script:
+
