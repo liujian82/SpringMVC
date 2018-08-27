@@ -16,7 +16,7 @@
   <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
   <title>SpringMVC Demo 首页</title>
   <!-- trigger to bulid the project again-->
-  <!-- 新 Bootstrap 核心 CSS 文件 -->
+  <!-- 新 Bootstrap 核心 CSS 文件 2018 9 27-->
   <link rel="stylesheet" href="${pageContext.request.contextPath}/css/bootstrap.min.css">
 
 </head>
